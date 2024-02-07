@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%);
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  font-family: "Overpass", sans-serif;
+}
+
+main {
+  margin-inline: auto;
+}
+
+.main-card {
+  background: radial-gradient(
+    at top,
+    hsla(213, 20%, 18%, 0.582),
+    hsl(213, 19%, 18%)
+  );
+  max-width: 420px;
+  padding: 1.4em;
+  border-radius: 22px;
+  margin-inline: 12px;
+}
+
+.main-card > h1 {
+  font-size: 1.5rem;
+  margin-top: 1.2em;
+}
+
+.main-card > p {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5;
+  font-size: 0.9rem;
+  margin-bottom: 2em;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+[type="radio"]:checked + .circle {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 12%, 63%);
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.6em;
+  color: hsl(216, 12%, 54%);
+  font-size: 0.9rem;
+}
+
+.circle {
+  display: flex;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: hsla(216, 12%, 54%, 0.189);
+  transition: background-color 0.1s ease-in, color 0.1s ease-in;
+}
+
+.circle:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.round > img {
+  display: block;
+}
+
+button {
+  display: block;
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  width: 100%;
+  padding: 1em 0;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 3px;
+  font-weight: 700;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in, color 0.1s ease-in;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.hidden {
+  display: none;
+}
+
+#section-2 {
+  text-align: center;
+}
+
+#section-2 p:first-of-type {
+  color: hsla(25, 97%, 53%, 0.832);
+  background-color: hsl(213, 19%, 18%);
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  border-radius: 22px;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+#section-2 p {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 800px) {
+  .main-card {
+    padding: 1.8em;
+  }
+  .circle {
+    width: 48px;
+    height: 48px;
+  }
+
+  .form-container {
+    font-size: 1rem;
+  }
+
+  .main-card > p {
+    font-size: 1rem;
+  }
+}
